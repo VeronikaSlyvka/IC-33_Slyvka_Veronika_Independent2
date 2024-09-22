@@ -1,0 +1,223 @@
+h1, h3 {
+    text-align: center;
+}
+
+#selector{
+    color: blueviolet;
+    text-align: left;
+}
+
+h4{
+    background-color: rgb(157, 115, 157);
+    opacity: 0.5;
+}
+
+.border{
+    border-style: dashed;
+}
+
+h5{
+    margin-left: 100px;
+}
+
+#first {
+    border: 1px solid black;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.width{
+    width: 20px;
+}
+
+#block {
+    background-color: rgb(212, 211, 134);
+    width: 300px;
+    border: 15px solid rgb(185, 125, 82);
+    padding: 50px;
+    margin: 20px;
+}
+
+a{
+    color: rgb(226, 147, 43);
+    font-size: 20px;
+}
+
+ul{
+    background-color: rgb(190, 190, 215);
+    padding: 20px;
+}
+
+ul li{
+    background-color: rgb(211, 170, 222);
+    padding: 5px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+}
+
+table{    
+  width: 100%;
+  border: 1px solid black;
+}
+
+#corners{
+    border-radius: 25px; 
+    background-color: #d177d4;
+    padding: 10px;
+}
+
+#animation{
+    width: 50px;
+  height: 50px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {background-color: rgb(255, 0, 0);}
+    10%  {background-color: rgb(255, 98, 0);}
+    20%  {background-color: rgb(242, 255, 0);}
+    30% {background-color: rgb(166, 255, 0);}
+    40% {background-color: rgb(4, 254, 133);}
+    50% {background-color: rgb(4, 234, 255);}
+    60% {background-color: rgb(3, 133, 255);}
+    70% {background-color: rgb(115, 1, 255);}
+    80% {background-color: rgb(217, 0, 255);}
+    90% {background-color: rgb(255, 0, 149);}
+    100% {background-color: rgb(66, 0, 10);}
+}
+
+.tooltip {
+    position: relative; 
+    display: inline-block;
+    cursor: pointer; 
+  }
+
+  .tooltip .tooltip-text {
+    visibility: hidden; 
+    width: 140px; 
+    background-color: black; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 5px;
+    padding: 5px 0; 
+    position: absolute; 
+    z-index: 1; 
+    bottom: 125%; 
+    left: 50%; 
+    margin-left: -70px; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+  }
+
+
+  .tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px; 
+    border-width: 5px; 
+    border-style: solid;
+    border-color: black transparent transparent transparent; /* Колір стрілки */
+  }
+
+  .tooltip:hover .tooltip-text {
+    visibility: visible; 
+    opacity: 1; 
+  }
+
+  .button {
+    background-color: #9b2fdf; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #2b392c;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  .newspaper {
+    column-count: 3;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+ #current{
+    color: pink;
+    border: 10px solid currentcolor;
+    padding: 15px;  
+  }
+
+  #shadow{
+    text-shadow: 2px 2px 5px rgb(208, 63, 88);
+  }
+
+ #box {
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    background-color: rgb(191, 122, 215);
+    box-shadow: 10px 10px;
+  }
+
+  #transition {
+    width: 100px;
+    height: 100px;
+    background: rgb(170, 169, 203);
+    transition: width 2s;
+  }
+  
+ #transition:hover {
+    width: 300px;
+  }
+
+  p.test {
+    width: 11em; 
+    border: 1px solid #000000;
+    word-wrap: break-word;
+  }
